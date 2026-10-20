@@ -26,7 +26,7 @@ public class smartplayer1 implements MancalaPlayer {
         // check if i can steal their space
         if (opp_board[0] >= 1 && your_board[5] == 0) {
 
-        if (your_board[4] == 1)
+        if (your_board[4] == 1) {
                 pit_options[num_opt] = 1;
             num_opt++;
         }
@@ -46,7 +46,8 @@ public class smartplayer1 implements MancalaPlayer {
             pit_options[num_opt] = 5;
             num_opt++;
         }
-        if (opp_board[1] >= 1 && your_board[4] == 0)
+        }
+        if (opp_board[1] >= 1 && your_board[4] == 0) {
             
         if (your_board[5] == 12) {
             pit_options[num_opt] = 12;
@@ -67,7 +68,8 @@ public class smartplayer1 implements MancalaPlayer {
         if (your_board[0] == 4) {
             pit_options[num_opt] = 4;
             num_opt++;
-        } else if (opp_board[2] >= 1 && your_board[3] == 0)
+        }
+        } else if (opp_board[2] >= 1 && your_board[3] == 0) {
             
         if (your_board[5] == 11) {
             pit_options[num_opt] = 11;
@@ -88,7 +90,8 @@ public class smartplayer1 implements MancalaPlayer {
         if (your_board[0] == 3) {
             pit_options[num_opt] = 3;
             num_opt++;
-        } else if (opp_board[3] >= 1 && your_board[2] == 0)
+        }
+        } else if (opp_board[3] >= 1 && your_board[2] == 0) {
             
         if (your_board[5] == 10) {
             pit_options[num_opt] = 10;
@@ -109,7 +112,8 @@ public class smartplayer1 implements MancalaPlayer {
         if (your_board[0] == 2) {
             pit_options[num_opt] = 2;
             num_opt++;
-        } else if (opp_board[4] >= 1 && your_board[1] == 0)
+        }
+        } else if (opp_board[4] >= 1 && your_board[1] == 0) {
             
         if (your_board[5] == 9) {
             pit_options[num_opt] = 9;
@@ -130,7 +134,8 @@ public class smartplayer1 implements MancalaPlayer {
         if (your_board[0] == 1) {
             pit_options[num_opt] = 1;
             num_opt++;
-        } else if (opp_board[5] >= 1 && your_board[0] == 0)
+        }
+        } else if (opp_board[5] >= 1 && your_board[0] == 0) {
             
         if (your_board[4] == 1) {
             pit_options[num_opt] = 1;
@@ -151,6 +156,7 @@ public class smartplayer1 implements MancalaPlayer {
         if (your_board[0] == 5) {
             pit_options[num_opt] = 5;
             num_opt++;
+        }
         } else {
 
             Random rand = new Random();
