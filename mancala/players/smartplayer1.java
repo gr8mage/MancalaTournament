@@ -157,8 +157,10 @@ public class smartplayer1 implements MancalaPlayer {
             pit_options[num_opt] = 12;
             num_opt++;
         }
-        
-        } else {
+          if (num_opt > 0) {
+            Random rand = new Random();
+            return pit_options[rand.nextInt(num_opt)];
+          } else {
 
             Random rand = new Random();
 
@@ -172,6 +174,8 @@ public class smartplayer1 implements MancalaPlayer {
             int ran_opt = rand.nextInt(num_opt);
 
             return pit_options[ran_opt];
+            }
+        
         }
         return 0;
     }
