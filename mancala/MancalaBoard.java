@@ -116,7 +116,7 @@ public class MancalaBoard {
                         strike = 0;
                         return;
                     } else {
-                      num_marbles = player2_board[cell];
+                      num_marbles = player1_board[cell];
                     }
                 } else { 
                     System.out.println("Try again!");
