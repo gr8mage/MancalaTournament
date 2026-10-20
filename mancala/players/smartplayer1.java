@@ -1,6 +1,8 @@
+package mancala.players;
+import mancala.MancalaPlayer;
 import java.util.Random;
 
-public class smartplayer1 implements mancalalplayer {
+public class smartplayer1 implements MancalaPlayer {
 
     String name;
 
@@ -9,15 +11,15 @@ public class smartplayer1 implements mancalalplayer {
     }
 
     public smartplayer1(String my_name) {
-        name = "smarty";
+        name = my_name;
     }
 
-    public String getname() {
+    public String getName() {
         return name;
     }
 
     public int take_turn(Integer[] your_board, Integer[] opp_board) {
-        int smartmove = 0;
+        //int smartmove = 0;
         int num_opt = 0;
         int pit_options[] = new int[50];
         
