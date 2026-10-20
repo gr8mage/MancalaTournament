@@ -69,7 +69,7 @@ public class smartplayer1 implements MancalaPlayer {
             pit_options[num_opt] = 4;
             num_opt++;
         }
-        } else if (opp_board[2] >= 1 && your_board[3] == 0) {
+        } if (opp_board[2] >= 1 && your_board[3] == 0) {
             
         if (your_board[5] == 11) {
             pit_options[num_opt] = 11;
@@ -91,7 +91,7 @@ public class smartplayer1 implements MancalaPlayer {
             pit_options[num_opt] = 3;
             num_opt++;
         }
-        } else if (opp_board[3] >= 1 && your_board[2] == 0) {
+        } if (opp_board[3] >= 1 && your_board[2] == 0) {
             
         if (your_board[5] == 10) {
             pit_options[num_opt] = 10;
@@ -113,7 +113,7 @@ public class smartplayer1 implements MancalaPlayer {
             pit_options[num_opt] = 2;
             num_opt++;
         }
-        } else if (opp_board[4] >= 1 && your_board[1] == 0) {
+        } if (opp_board[4] >= 1 && your_board[1] == 0) {
             
         if (your_board[5] == 9) {
             pit_options[num_opt] = 9;
@@ -135,28 +135,29 @@ public class smartplayer1 implements MancalaPlayer {
             pit_options[num_opt] = 1;
             num_opt++;
         }
-        } else if (opp_board[5] >= 1 && your_board[0] == 0) {
+        } if (opp_board[5] >= 1 && your_board[0] == 0) {
             
-        if (your_board[4] == 1) {
-            pit_options[num_opt] = 1;
+        if (your_board[5] == 8) {
+            pit_options[num_opt] = 8;
             num_opt++;
         }
-        if (your_board[3] == 2) {
-            pit_options[num_opt] = 2;
+        if (your_board[4] == 9) {
+            pit_options[num_opt] = 9;
             num_opt++;
         }
-        if (your_board[2] == 3) {
-            pit_options[num_opt] = 3;
+        if (your_board[3] == 10) {
+            pit_options[num_opt] = 10;
             num_opt++;
         }
-        if (your_board[1] == 4) {
-            pit_options[num_opt] = 4;
+        if (your_board[2] == 11) {
+            pit_options[num_opt] = 11;
             num_opt++;
         }
-        if (your_board[0] == 5) {
-            pit_options[num_opt] = 5;
+        if (your_board[1] == 12) {
+            pit_options[num_opt] = 12;
             num_opt++;
         }
+        
         } else {
 
             Random rand = new Random();
@@ -171,10 +172,6 @@ public class smartplayer1 implements MancalaPlayer {
             int ran_opt = rand.nextInt(num_opt);
 
             return pit_options[ran_opt];
-        }
-        if (num_opt > 0) {
-            Random rand = new Random();
-            return pit_options[rand.nextInt(num_opt)];
         }
         return 0;
     }
