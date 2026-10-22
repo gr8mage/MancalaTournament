@@ -2,9 +2,11 @@ import java.util.Scanner;
 
 import mancala.MancalaBoard;
 import mancala.MancalaPlayer;
+import mancala.players.GoodPlayer;
 import mancala.players.MinPlayer;
 //import mancala.players.GoodPlayer;
 import mancala.players.RandomPlayer;
+import mancala.players.UltraSmart;
 import mancala.players.Ultron;
 import mancala.players.smartplayer1;
 
