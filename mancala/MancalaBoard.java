@@ -1,6 +1,7 @@
 package mancala;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.concurrent.TimeUnit;
 
 public class MancalaBoard {
@@ -49,13 +50,15 @@ public class MancalaBoard {
 
     public void player_turn(MancalaPlayer player) {
         //System.out.println(player.getName() + " it is your turn!");
+        Integer[] player1copy = Arrays.copyOf(player1_board, player1_board.length);
+        Integer[] player2copy = Arrays.copyOf(player2_board, player2_board.length);
         int cell;
         if(player_turn == 1) {
-            cell = player.take_turn(player1_board, player2_board);
+            cell = player.take_turn(player1copy, player2copy);
             //System.out.println("Player 1 (" + player.getName()+") chose cell "+ cell);
             move(1, cell);
         } else {
-            cell = player.take_turn(player2_board, player1_board);
+            cell = player.take_turn(player2copy, player1copy);
             //System.out.println("Player 2 (" + player.getName()+") chose cell "+ cell);
             move(2, cell);
         }
