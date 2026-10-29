@@ -6,6 +6,7 @@ import mancala.players.GoodPlayer;
 import mancala.players.MinPlayer;
 //import mancala.players.GoodPlayer;
 import mancala.players.RandomPlayer;
+import mancala.players.Soucy;
 import mancala.players.UltraSmart;
 import mancala.players.Ultron;
 import mancala.players.smartplayer1;
@@ -21,7 +22,7 @@ public class PlayMancala {
         // MancalaPlayer player1 = new GoodPlayer("Repeat", 1.0, 3.0, 1.5, 1.0, 22.0);
         // // RandomPlayer();
         MancalaPlayer player1 = new smartplayer1();
-        MancalaPlayer player2 = new Ultron(); // new RandomPlayer();
+        MancalaPlayer player2 = new Soucy(); // new RandomPlayer();
 
         // System.out.println("How many games?");
         // int num_games = myScanner.nextInt();

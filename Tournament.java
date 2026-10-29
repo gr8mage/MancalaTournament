@@ -1,12 +1,13 @@
 
+import java.util.ArrayList;
+
 import mancala.MancalaBoard;
 import mancala.MancalaPlayer;
 import mancala.players.GoodPlayer;
 import mancala.players.RandomPlayer;
+import mancala.players.Soucy;
 import mancala.players.Ultron;
 import mancala.players.smartplayer1;
-
-import java.util.ArrayList;
 
 public class Tournament {
 
@@ -116,10 +117,11 @@ public class Tournament {
 
         Tournament tourny = new Tournament();
 
-        tourny.add_player(new GoodPlayer());
+        // tourny.add_player(new GoodPlayer());
         tourny.add_player(new RandomPlayer());
         tourny.add_player(new Ultron());
         tourny.add_player(new smartplayer1());
+        tourny.add_player(new Soucy());
 
         System.out.println("We have " + tourny.num_players() + " players in the Tournament!");
 
